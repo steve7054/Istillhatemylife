@@ -1,16 +1,32 @@
 
-#body {
+body {
   margin: 0px;
+  background-color: hsl(0, 1%, 28%);
+  color: whitesmoke;
+  font-family: myFirstFont, MyFont_IE, Tahoma, Geneva, sans-serif;
 }
 
 #header {
   margin: 0px;
   padding: 0px;
+  background-color: #393737;
+  color: whitesmoke;
+  top: 0;
+
 }
 
 #main {
+  margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
+  background-color: hsl(0, 2%, 28%);
+  color: whitesmoke;
+  max-width: 800px;
+  
+}
+
+.navbar {
+  position: sticky;
 }
 
 #Sample {
@@ -19,7 +35,7 @@
 
 .navbar ul {
   list-style-type: none;
-  background-color: hsl(0, 0%, 25%);
+  background-color: #4d6de3;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -32,12 +48,107 @@
   display: block;
   text-align: center;
   font-size: 20px;
+  border: none;
 }
 
 .navbar a:hover {
-  background-color: hsl(0, 0%, 14%);
+  background-color: hsl(227, 73%, 50%);
 }
 
 .navbar li {
   float: left;
+}
+
+.contact {
+  float: left;
+  width: 100%;
+  border: 1px solid #a1a1a1;
+  margin-bottom: 26px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  
+}
+
+.spoiler { 
+  background-color: black;
+  color: black;
+}
+
+.spoiler:hover {
+  background-color: inherit;
+  color: white;
+  font-weight: bold;
+}
+
+.row input {
+  padding: 5px 5px;
+  width: 300px;
+  min-width: 200px;
+  display: block;
+}
+
+.row textarea {
+  height: 150px;
+  width: 450px;
+  padding: 5px 5px;
+}
+
+.submit_button {
+  background-color: #4d6de3;
+  color: white;
+  padding: 7px;
+  padding-right: 8px;
+  font-size: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background-color: hsl(227, 73%, 55%);
+  box-shadow: 1px 1px 2px black;
+}
+
+.footer {
+  background-color: #393737;
+  clear: both;
+  position: static;
+  width: 100%;
+  height: 200px;
+}
+
+#box1 {
+  background-color: #4d6de3;
+  height: 54px;
+  width: 100%;;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#box2 {
+  background-color: #393737;
+  max-width: 100%;
+  padding: 15px;
+  box-shadow: 2px 2px 3px black;
+  padding-top: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.active {
+  background-color: hsl(227, 73%, 40%);
+}
+
+.active i {
+  box-shadow: 2px 2px 7px white, -2px -2px 7px white;
 }

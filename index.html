@@ -5,24 +5,52 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For real real</title>
+    <title>GlobalSpike</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6b09219188.js" crossorigin="anonymous"></script>
   </head>
 
   <body id="body">
 
     <header id="header">
 
-      <h1 id="Sample">Big Pila Bitches</h1>
-    
-      <nav class="navbar">
+      <a href="index.html">
+        <img src="img/logo/logo_transparent.png" alt="Logo" title="GlobalSpike" width="250px">
+      </a>
+         
+      <nav class="navbar" id="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="active" href="index.html"><i class="fa-solid fa-house fa-sm" style="color: #152d84; margin-right: 7px;"></i>Home</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa-solid fa-layer-group fa-sm" style="color: #152d84; margin-right: 7px;"></i>About</a></li>
+          <li>
+            <a href="products.html"><i class="fa-solid fa-tag fa-sm" style="color: #152d84; margin-right: 7px;"></i>Products</a></li>
+          <li>
+            <a href="contact.html"><i class="fa-solid fa-address-card fa-sm" style="color: #152d84; margin-right: 7px; margin-top: 5px;"></i>Contact us</a></li>
         </ul>
       </nav>
+
+      <script>
+        // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+      </script>
 
     </header>
 
@@ -31,7 +59,23 @@
       <p>I am HOME to incomprehensible rage</p>
 
       <img src="img/incomprehensible-rage-rage.gif" alt="RAGE MEME">
+
+      
     </main>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
   
+    <footer class="footer">
+      <div id="box1"></div>
+      <br>
+      <h1 style="margin-left: 15px;">MAKE THE FOOTER YOU LAZY FUCK</h1>
+    </footer>
+
   </body>
 </html>
